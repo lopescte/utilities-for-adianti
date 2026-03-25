@@ -1,48 +1,48 @@
 {
-  "name": "lopescte/utilities-for-adianti",
-  "description": "Biblioteca de utilidades e complementos para serem utilizados em softwares desenvolvidos usando o Adianti Framework, com o objetivo é facilitar a implementação de funções que não são nativas do Framework sem a necessidade de alteração em componentes nativos.",
-  "keywords": [
-      "Adianti",
-      "Adianti Framework",
-      "PHP",
-      "LGPD",
-      "S3",
-      "Amazon S3"      
-  ],
-  "type": "library",
-  "version": "1.0.0",
-  "license": [
-      "LGPL-3.0-or-later",
-      "GPL-3.0-or-later",
-      "MIT"
-  ],
-  "authors": [
-      {
-          "name": "Marcelo Lopes",
-          "email": "lopes.cte@gmail.com",
-          "homepage": "https://www.reiselopes.com.br"
-      }
-  ],
-  "require": {
-      "php": "^8.0",
-      "aws/aws-sdk-php": "^3.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Lopescte\\UtilitiesForAdianti\\": "src/"
+    "name": "lopescte/utilities-for-adianti",
+    "description": "Biblioteca de utilidades e complementos para serem utilizados em softwares desenvolvidos usando o Adianti Framework, com o objetivo \u00e9 facilitar a implementa\u00e7\u00e3o de fun\u00e7\u00f5es que n\u00e3o s\u00e3o nativas do Framework sem a necessidade de altera\u00e7\u00e3o em componentes nativos.",
+    "keywords": [
+        "Adianti",
+        "Adianti Framework",
+        "PHP",
+        "LGPD",
+        "S3",
+        "Amazon S3"
+    ],
+    "type": "library",
+    "version": "1.0.0",
+    "license": [
+        "LGPL-3.0-or-later",
+        "GPL-3.0-or-later",
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Marcelo Lopes",
+            "email": "lopes.cte@gmail.com",
+            "homepage": "https://www.reiselopes.com.br"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "aws/aws-sdk-php": "^3.2"
     },
-    "files": [
-      "src/bootstrap.php"
-    ]
-  },
-  "repositories": [
-      {
-          "type": "composer",
-          "url": "https://packagist.org"
-      },
-      {
-          "packagist": false
-      }
-  ],
-  "minimum-stability": "dev"
+    "autoload": {
+        "psr-4": {
+            "Lopescte\\UtilitiesForAdianti\\": "src/"
+        },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "minimum-stability": "dev"
 }
