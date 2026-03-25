@@ -1,0 +1,1506 @@
+{
+  "default_locale": "pt",
+  "default_driver": "default",
+  "default_message": {
+    "pt": "Ocorreu um erro ao processar os dados.",
+    "en": "An error occurred while processing the data.",
+    "es": "Se produjo un error al procesar los datos."
+  },
+  "drivers": {
+    "default": {
+      "sqlstate": {
+        "00000": {
+          "pt": "Operação concluída sem erro.",
+          "en": "Operation completed successfully.",
+          "es": "Operación completada sin errores."
+        },
+        "01000": {
+          "pt": "O banco de dados retornou um aviso durante a operação.",
+          "en": "The database returned a warning during the operation.",
+          "es": "La base de datos devolvió una advertencia durante la operación."
+        },
+        "01004": {
+          "pt": "Um valor foi truncado durante a leitura ou gravação de dados.",
+          "en": "A value was truncated during data read or write.",
+          "es": "Un valor fue truncado durante la lectura o escritura de datos."
+        },
+        "02000": {
+          "pt": "Nenhum registro foi encontrado para a operação solicitada.",
+          "en": "No record was found for the requested operation.",
+          "es": "No se encontró ningún registro para la operación solicitada."
+        },
+        "07001": {
+          "pt": "Quantidade inválida de parâmetros na consulta SQL.",
+          "en": "Invalid number of parameters in SQL query.",
+          "es": "Cantidad inválida de parámetros en la consulta SQL."
+        },
+        "08001": {
+          "pt": "Não foi possível estabelecer conexão com o banco de dados.",
+          "en": "Could not establish a connection to the database.",
+          "es": "No fue posible establecer conexión con la base de datos."
+        },
+        "08003": {
+          "pt": "A conexão com o banco de dados não está aberta.",
+          "en": "The database connection is not open.",
+          "es": "La conexión con la base de datos no está abierta."
+        },
+        "08004": {
+          "pt": "O banco de dados recusou a conexão.",
+          "en": "The database refused the connection.",
+          "es": "La base de datos rechazó la conexión."
+        },
+        "08006": {
+          "pt": "A conexão com o banco de dados foi perdida.",
+          "en": "The database connection was lost.",
+          "es": "Se perdió la conexión con la base de datos."
+        },
+        "08007": {
+          "pt": "Falha de transação por perda de conexão com o banco de dados.",
+          "en": "Transaction failure due to lost database connection.",
+          "es": "Fallo de transacción por pérdida de conexión con la base de datos."
+        },
+        "0A000": {
+          "pt": "Este recurso não é suportado pelo banco de dados ou driver atual.",
+          "en": "This feature is not supported by the current database or driver.",
+          "es": "Esta funcionalidad no es compatible con la base de datos o el controlador actual."
+        },
+        "21000": {
+          "pt": "A operação retornou mais registros do que o esperado.",
+          "en": "The operation returned more rows than expected.",
+          "es": "La operación devolvió más filas de las esperadas."
+        },
+        "22001": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "22002": {
+          "pt": "Indicador nulo inválido ou valor ausente em operação de dados.",
+          "en": "Invalid null indicator or missing value in data operation.",
+          "es": "Indicador nulo inválido o valor faltante en la operación de datos."
+        },
+        "22003": {
+          "pt": "O valor numérico informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The numeric value provided is outside the allowed range{field_suffix}.",
+          "es": "El valor numérico informado está fuera del rango permitido{field_suffix}."
+        },
+        "22004": {
+          "pt": "Não é permitido valor nulo nesta operação{field_suffix}.",
+          "en": "A null value is not allowed in this operation{field_suffix}.",
+          "es": "No se permite un valor nulo en esta operación{field_suffix}."
+        },
+        "22005": {
+          "pt": "Erro de atribuição de dados{field_suffix}.",
+          "en": "Data assignment error{field_suffix}.",
+          "es": "Error de asignación de datos{field_suffix}."
+        },
+        "22007": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "22008": {
+          "pt": "O valor de data ou hora está fora do intervalo permitido{field_suffix}.",
+          "en": "The date or time value is outside the allowed range{field_suffix}.",
+          "es": "El valor de fecha u hora está fuera del rango permitido{field_suffix}."
+        },
+        "22012": {
+          "pt": "Ocorreu divisão por zero durante o processamento dos dados.",
+          "en": "A division by zero occurred while processing data.",
+          "es": "Se produjo una división por cero al procesar los datos."
+        },
+        "22018": {
+          "pt": "Foi informado um valor inválido para conversão de tipo{field_suffix}.",
+          "en": "An invalid value was provided for type conversion{field_suffix}.",
+          "es": "Se informó un valor inválido para la conversión de tipo{field_suffix}."
+        },
+        "22019": {
+          "pt": "Caractere de escape inválido na expressão SQL.",
+          "en": "Invalid escape character in SQL expression.",
+          "es": "Carácter de escape inválido en la expresión SQL."
+        },
+        "22023": {
+          "pt": "Parâmetro inválido informado para a operação solicitada.",
+          "en": "An invalid parameter was provided for the requested operation.",
+          "es": "Se informó un parámetro inválido para la operación solicitada."
+        },
+        "22024": {
+          "pt": "Caractere de escape inválido ou uso incorreto de padrão de busca.",
+          "en": "Invalid escape character or incorrect pattern usage.",
+          "es": "Carácter de escape inválido o uso incorrecto del patrón de búsqueda."
+        },
+        "22025": {
+          "pt": "Sequência de escape inválida.",
+          "en": "Invalid escape sequence.",
+          "es": "Secuencia de escape inválida."
+        },
+        "22026": {
+          "pt": "Incompatibilidade entre comprimento e tipo de dado informado.",
+          "en": "Mismatch between length and provided data type.",
+          "es": "Incompatibilidad entre la longitud y el tipo de dato informado."
+        },
+        "22027": {
+          "pt": "Erro de trim ou preenchimento em valor textual.",
+          "en": "Trim or padding error in text value.",
+          "es": "Error de recorte o relleno en valor textual."
+        },
+        "2202E": {
+          "pt": "Índice de array inválido.",
+          "en": "Invalid array index.",
+          "es": "Índice de arreglo inválido."
+        },
+        "2202G": {
+          "pt": "Quantidade inválida de elementos em array.",
+          "en": "Invalid number of array elements.",
+          "es": "Cantidad inválida de elementos en arreglo."
+        },
+        "2202H": {
+          "pt": "Subscrito de array inválido.",
+          "en": "Invalid array subscript.",
+          "es": "Subíndice de arreglo inválido."
+        },
+        "2202W": {
+          "pt": "Erro na validação de documento XML.",
+          "en": "XML document validation error.",
+          "es": "Error en la validación del documento XML."
+        },
+        "2202X": {
+          "pt": "Valor XPath inválido.",
+          "en": "Invalid XPath value.",
+          "es": "Valor XPath inválido."
+        },
+        "22032": {
+          "pt": "Valor JSON inválido ou malformado.",
+          "en": "Invalid or malformed JSON value.",
+          "es": "Valor JSON inválido o malformado."
+        },
+        "22033": {
+          "pt": "Substituição inválida em valor JSON.",
+          "en": "Invalid substitution in JSON value.",
+          "es": "Sustitución inválida en valor JSON."
+        },
+        "22035": {
+          "pt": "Item JSON sem valor correspondente.",
+          "en": "JSON item missing corresponding value.",
+          "es": "Elemento JSON sin valor correspondiente."
+        },
+        "22036": {
+          "pt": "Membro JSON duplicado.",
+          "en": "Duplicate JSON member.",
+          "es": "Miembro JSON duplicado."
+        },
+        "22037": {
+          "pt": "Documento JSON não pôde ser validado.",
+          "en": "JSON document could not be validated.",
+          "es": "No se pudo validar el documento JSON."
+        },
+        "2203B": {
+          "pt": "Expressão regular inválida.",
+          "en": "Invalid regular expression.",
+          "es": "Expresión regular inválida."
+        },
+        "2203C": {
+          "pt": "Caractere ou valor inválido em codificação textual.",
+          "en": "Invalid character or value in text encoding.",
+          "es": "Carácter o valor inválido en la codificación textual."
+        },
+        "2203D": {
+          "pt": "Substituição inválida em expressão regular.",
+          "en": "Invalid replacement in regular expression.",
+          "es": "Sustitución inválida en expresión regular."
+        },
+        "2203E": {
+          "pt": "Substring inválida em expressão regular.",
+          "en": "Invalid substring in regular expression.",
+          "es": "Subcadena inválida en expresión regular."
+        },
+        "23000": {
+          "pt": "Operação não permitida por restrição de integridade dos dados.",
+          "en": "Operation not allowed due to data integrity constraints.",
+          "es": "Operación no permitida por restricciones de integridad de datos."
+        },
+        "23001": {
+          "pt": "Restrição de integridade foi violada durante a operação.",
+          "en": "Integrity constraint was violated during the operation.",
+          "es": "Se violó una restricción de integridad durante la operación."
+        },
+        "24000": {
+          "pt": "Estado inválido de cursor na operação solicitada.",
+          "en": "Invalid cursor state for the requested operation.",
+          "es": "Estado de cursor inválido para la operación solicitada."
+        },
+        "25000": {
+          "pt": "Estado inválido da transação.",
+          "en": "Invalid transaction state.",
+          "es": "Estado de transacción inválido."
+        },
+        "25001": {
+          "pt": "Não foi possível iniciar a transação na condição atual.",
+          "en": "Could not start the transaction in the current state.",
+          "es": "No se pudo iniciar la transacción en el estado actual."
+        },
+        "25002": {
+          "pt": "A transação já se encontra em andamento.",
+          "en": "The transaction is already in progress.",
+          "es": "La transacción ya está en curso."
+        },
+        "25006": {
+          "pt": "A operação não é permitida em transação somente leitura.",
+          "en": "The operation is not allowed in a read-only transaction.",
+          "es": "La operación no está permitida en una transacción de solo lectura."
+        },
+        "25P01": {
+          "pt": "Não há transação ativa para concluir ou desfazer.",
+          "en": "There is no active transaction to commit or roll back.",
+          "es": "No hay una transacción activa para confirmar o deshacer."
+        },
+        "25P02": {
+          "pt": "A transação foi abortada e precisa ser finalizada antes de novas operações.",
+          "en": "The transaction was aborted and must be ended before new operations.",
+          "es": "La transacción fue abortada y debe finalizarse antes de nuevas operaciones."
+        },
+        "28000": {
+          "pt": "Falha de autorização para acesso ao banco de dados.",
+          "en": "Authorization failure when accessing the database.",
+          "es": "Fallo de autorización al acceder a la base de datos."
+        },
+        "2D000": {
+          "pt": "Tentativa inválida de encerrar transação.",
+          "en": "Invalid transaction termination attempt.",
+          "es": "Intento inválido de finalizar transacción."
+        },
+        "34000": {
+          "pt": "Nome de cursor inválido.",
+          "en": "Invalid cursor name.",
+          "es": "Nombre de cursor inválido."
+        },
+        "3D000": {
+          "pt": "Banco de dados não encontrado.",
+          "en": "Database not found.",
+          "es": "Base de datos no encontrada."
+        },
+        "3F000": {
+          "pt": "Schema não encontrado.",
+          "en": "Schema not found.",
+          "es": "Esquema no encontrado."
+        },
+        "40000": {
+          "pt": "A transação não pôde ser concluída devido a conflito de execução.",
+          "en": "The transaction could not be completed due to an execution conflict.",
+          "es": "La transacción no pudo completarse debido a un conflicto de ejecución."
+        },
+        "40001": {
+          "pt": "A transação sofreu deadlock ou serialização e deve ser repetida.",
+          "en": "The transaction encountered a deadlock or serialization failure and should be retried.",
+          "es": "La transacción encontró un interbloqueo o fallo de serialización y debe repetirse."
+        },
+        "40P01": {
+          "pt": "A transação sofreu deadlock e precisa ser executada novamente.",
+          "en": "The transaction encountered a deadlock and must be retried.",
+          "es": "La transacción sufrió un interbloqueo y debe ejecutarse nuevamente."
+        },
+        "42000": {
+          "pt": "Há erro de sintaxe SQL ou violação de regra de acesso.",
+          "en": "There is an SQL syntax error or access rule violation.",
+          "es": "Hay un error de sintaxis SQL o una violación de reglas de acceso."
+        },
+        "42501": {
+          "pt": "Permissão insuficiente para executar a operação solicitada.",
+          "en": "Insufficient privilege to perform the requested operation.",
+          "es": "Permisos insuficientes para ejecutar la operación solicitada."
+        },
+        "42601": {
+          "pt": "Há erro de sintaxe na instrução SQL.",
+          "en": "There is a syntax error in the SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL."
+        },
+        "42701": {
+          "pt": "Coluna duplicada na instrução SQL.",
+          "en": "Duplicate column in SQL statement.",
+          "es": "Columna duplicada en la instrucción SQL."
+        },
+        "42702": {
+          "pt": "Referência ambígua de coluna na instrução SQL.",
+          "en": "Ambiguous column reference in SQL statement.",
+          "es": "Referencia ambigua de columna en la instrucción SQL."
+        },
+        "42703": {
+          "pt": "Coluna não encontrada na instrução SQL{field_suffix}.",
+          "en": "Column not found in SQL statement{field_suffix}.",
+          "es": "Columna no encontrada en la instrucción SQL{field_suffix}."
+        },
+        "42803": {
+          "pt": "Uso inválido de agrupamento ou agregação na consulta SQL.",
+          "en": "Invalid use of grouping or aggregation in SQL query.",
+          "es": "Uso inválido de agrupación o agregación en la consulta SQL."
+        },
+        "42804": {
+          "pt": "Incompatibilidade entre tipos de dados na operação solicitada.",
+          "en": "Datatype mismatch in the requested operation.",
+          "es": "Incompatibilidad entre tipos de datos en la operación solicitada."
+        },
+        "42809": {
+          "pt": "Objeto do banco usado com tipo incorreto na operação solicitada.",
+          "en": "Database object used with incorrect type in the requested operation.",
+          "es": "Objeto de base de datos usado con tipo incorrecto en la operación solicitada."
+        },
+        "42P01": {
+          "pt": "Tabela ou relação não encontrada{table_suffix}.",
+          "en": "Table or relation not found{table_suffix}.",
+          "es": "Tabla o relación no encontrada{table_suffix}."
+        },
+        "42P02": {
+          "pt": "Parâmetro da consulta não encontrado ou não informado corretamente.",
+          "en": "Query parameter not found or not provided correctly.",
+          "es": "Parámetro de consulta no encontrado o no informado correctamente."
+        },
+        "42P07": {
+          "pt": "A tabela ou relação já existe{table_suffix}.",
+          "en": "The table or relation already exists{table_suffix}.",
+          "es": "La tabla o relación ya existe{table_suffix}."
+        },
+        "44000": {
+          "pt": "A operação não pôde ser concluída por regra de verificação de dados.",
+          "en": "The operation could not be completed due to a data check rule.",
+          "es": "La operación no pudo completarse por una regla de verificación de datos."
+        },
+        "53100": {
+          "pt": "Espaço em disco insuficiente para concluir a operação no banco de dados.",
+          "en": "Insufficient disk space to complete the database operation.",
+          "es": "Espacio en disco insuficiente para completar la operación en la base de datos."
+        },
+        "53200": {
+          "pt": "Memória insuficiente para concluir a operação no banco de dados.",
+          "en": "Insufficient memory to complete the database operation.",
+          "es": "Memoria insuficiente para completar la operación en la base de datos."
+        },
+        "53300": {
+          "pt": "Há muitas conexões simultâneas com o banco de dados.",
+          "en": "There are too many simultaneous connections to the database.",
+          "es": "Hay demasiadas conexiones simultáneas a la base de datos."
+        },
+        "54000": {
+          "pt": "A operação excedeu um limite do sistema do banco de dados.",
+          "en": "The operation exceeded a database system limit.",
+          "es": "La operación excedió un límite del sistema de base de datos."
+        },
+        "54001": {
+          "pt": "A consulta é complexa demais para ser processada pelo banco de dados.",
+          "en": "The query is too complex to be processed by the database.",
+          "es": "La consulta es demasiado compleja para ser procesada por la base de datos."
+        },
+        "54011": {
+          "pt": "Excesso de colunas na operação solicitada.",
+          "en": "Too many columns in the requested operation.",
+          "es": "Exceso de columnas en la operación solicitada."
+        },
+        "57014": {
+          "pt": "A instrução SQL foi cancelada pelo sistema, usuário ou tempo limite.",
+          "en": "The SQL statement was canceled by the system, user, or timeout.",
+          "es": "La instrucción SQL fue cancelada por el sistema, el usuario o el tiempo límite."
+        },
+        "57P01": {
+          "pt": "O banco de dados foi desligado durante a operação.",
+          "en": "The database was shut down during the operation.",
+          "es": "La base de datos se apagó durante la operación."
+        },
+        "57P03": {
+          "pt": "O banco de dados está temporariamente indisponível.",
+          "en": "The database is temporarily unavailable.",
+          "es": "La base de datos está temporalmente no disponible."
+        },
+        "58030": {
+          "pt": "Erro de entrada e saída no banco de dados.",
+          "en": "Input/output error in the database.",
+          "es": "Error de entrada/salida en la base de datos."
+        },
+        "F0000": {
+          "pt": "Erro de configuração do banco de dados.",
+          "en": "Database configuration error.",
+          "es": "Error de configuración de la base de datos."
+        },
+        "HY000": {
+          "pt": "O banco de dados retornou um erro geral.",
+          "en": "The database returned a general error.",
+          "es": "La base de datos devolvió un error general."
+        },
+        "HY001": {
+          "pt": "Memória insuficiente no driver ou banco de dados.",
+          "en": "Insufficient memory in the driver or database.",
+          "es": "Memoria insuficiente en el controlador o base de datos."
+        },
+        "HY008": {
+          "pt": "A operação foi cancelada.",
+          "en": "The operation was canceled.",
+          "es": "La operación fue cancelada."
+        },
+        "HYT00": {
+          "pt": "Tempo limite excedido na operação com o banco de dados.",
+          "en": "Timeout expired during database operation.",
+          "es": "Se excedió el tiempo límite en la operación con la base de datos."
+        },
+        "HYT01": {
+          "pt": "Tempo limite de conexão com o banco de dados excedido.",
+          "en": "Database connection timeout expired.",
+          "es": "Se excedió el tiempo límite de conexión con la base de datos."
+        },
+        "IM001": {
+          "pt": "Função não suportada pelo driver atual.",
+          "en": "Function not supported by the current driver.",
+          "es": "Función no compatible con el controlador actual."
+        },
+        "IM002": {
+          "pt": "Fonte de dados ou driver não encontrado.",
+          "en": "Data source or driver not found.",
+          "es": "Fuente de datos o controlador no encontrado."
+        }
+      },
+      "message_contains": {
+        "duplicate key": {
+          "pt": "Já existe um registro com os mesmos dados informados{value_suffix}.",
+          "en": "A record with the same data already exists{value_suffix}.",
+          "es": "Ya existe un registro con los mismos datos informados{value_suffix}."
+        },
+        "unique constraint": {
+          "pt": "Já existe um registro com valor único já cadastrado{value_suffix}.",
+          "en": "A record with a unique value already exists{value_suffix}.",
+          "es": "Ya existe un registro con un valor único ya registrado{value_suffix}."
+        },
+        "foreign key constraint": {
+          "pt": "A operação não pode ser realizada porque existem vínculos com outros registros.",
+          "en": "The operation cannot be completed because there are related records.",
+          "es": "La operación no puede realizarse porque existen vínculos con otros registros."
+        },
+        "cannot be null": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "not-null constraint": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "check constraint": {
+          "pt": "Os dados informados violam uma regra de validação do banco de dados.",
+          "en": "The provided data violates a database validation rule.",
+          "es": "Los datos informados violan una regla de validación de la base de datos."
+        },
+        "string or binary data would be truncated": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "data too long": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "out of range": {
+          "pt": "O valor informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The provided value is outside the allowed range{field_suffix}.",
+          "es": "El valor informado está fuera del rango permitido{field_suffix}."
+        },
+        "invalid input syntax": {
+          "pt": "Foi informado um valor em formato inválido{field_suffix}.",
+          "en": "An invalid formatted value was provided{field_suffix}.",
+          "es": "Se informó un valor con formato inválido{field_suffix}."
+        },
+        "invalid datetime format": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time format was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "division by zero": {
+          "pt": "Ocorreu divisão por zero durante o processamento dos dados.",
+          "en": "A division by zero occurred while processing data.",
+          "es": "Se produjo una división por cero al procesar los datos."
+        },
+        "deadlock": {
+          "pt": "A operação sofreu deadlock no banco de dados. Tente novamente.",
+          "en": "The operation encountered a database deadlock. Please try again.",
+          "es": "La operación sufrió un interbloqueo en la base de datos. Intente nuevamente."
+        },
+        "lock timeout": {
+          "pt": "A operação excedeu o tempo de espera por bloqueio no banco de dados.",
+          "en": "The operation exceeded the lock wait timeout in the database.",
+          "es": "La operación excedió el tiempo de espera por bloqueo en la base de datos."
+        },
+        "timeout expired": {
+          "pt": "A operação excedeu o tempo limite de execução no banco de dados.",
+          "en": "The operation exceeded the execution timeout in the database.",
+          "es": "La operación excedió el tiempo límite de ejecución en la base de datos."
+        },
+        "syntax error": {
+          "pt": "Há erro de sintaxe na instrução SQL executada.",
+          "en": "There is a syntax error in the executed SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL ejecutada."
+        },
+        "permission denied": {
+          "pt": "Permissão insuficiente para executar a operação no banco de dados.",
+          "en": "Insufficient permission to execute the database operation.",
+          "es": "Permisos insuficientes para ejecutar la operación en la base de datos."
+        },
+        "access denied": {
+          "pt": "Acesso negado ao banco de dados ou ao objeto solicitado.",
+          "en": "Access denied to the database or requested object.",
+          "es": "Acceso denegado a la base de datos o al objeto solicitado."
+        },
+        "too many connections": {
+          "pt": "Há muitas conexões simultâneas com o banco de dados.",
+          "en": "There are too many simultaneous database connections.",
+          "es": "Hay demasiadas conexiones simultáneas a la base de datos."
+        },
+        "invalid identifier": {
+          "pt": "Foi informado um identificador inválido na instrução SQL.",
+          "en": "An invalid identifier was provided in the SQL statement.",
+          "es": "Se informó un identificador inválido en la instrucción SQL."
+        },
+        "relation does not exist": {
+          "pt": "A tabela ou relação informada não foi encontrada{table_suffix}.",
+          "en": "The specified table or relation was not found{table_suffix}.",
+          "es": "La tabla o relación informada no fue encontrada{table_suffix}."
+        },
+        "column does not exist": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "invalid json": {
+          "pt": "Foi informado um conteúdo JSON inválido.",
+          "en": "An invalid JSON content was provided.",
+          "es": "Se informó un contenido JSON inválido."
+        },
+        "malformed json": {
+          "pt": "O conteúdo JSON informado está malformado.",
+          "en": "The provided JSON content is malformed.",
+          "es": "El contenido JSON informado está malformado."
+        },
+        "xml parsing": {
+          "pt": "O conteúdo XML informado é inválido ou malformado.",
+          "en": "The provided XML content is invalid or malformed.",
+          "es": "El contenido XML informado es inválido o malformado."
+        },
+        "encoding": {
+          "pt": "Foi detectado um problema de codificação de caracteres nos dados informados.",
+          "en": "A character encoding problem was detected in the provided data.",
+          "es": "Se detectó un problema de codificación de caracteres en los datos informados."
+        },
+        "incorrect string value": {
+          "pt": "Foi informado um valor inválido{field_suffix}. Verifique caracteres especiais, emojis ou codificação.",
+          "en": "An invalid value was provided{field_suffix}. Check special characters, emojis, or encoding.",
+          "es": "Se informó un valor inválido{field_suffix}. Verifique caracteres especiales, emojis o codificación."
+        }
+      }
+    },
+    "mysql": {
+      "driver_codes": {
+        "1022": {
+          "pt": "Não foi possível gravar os dados por conflito de chave duplicada.",
+          "en": "Could not save data due to duplicate key conflict.",
+          "es": "No fue posible guardar los datos por conflicto de clave duplicada."
+        },
+        "1040": {
+          "pt": "Há conexões em excesso com o banco de dados MySQL/MariaDB.",
+          "en": "There are too many connections to the MySQL/MariaDB database.",
+          "es": "Hay demasiadas conexiones a la base de datos MySQL/MariaDB."
+        },
+        "1044": {
+          "pt": "Usuário sem permissão para acessar o banco de dados solicitado.",
+          "en": "User does not have permission to access the requested database.",
+          "es": "El usuario no tiene permiso para acceder a la base de datos solicitada."
+        },
+        "1045": {
+          "pt": "Usuário ou senha inválidos para conexão com o banco de dados.",
+          "en": "Invalid username or password for database connection.",
+          "es": "Usuario o contraseña inválidos para la conexión con la base de datos."
+        },
+        "1046": {
+          "pt": "Nenhum banco de dados foi selecionado para a operação.",
+          "en": "No database was selected for the operation.",
+          "es": "No se seleccionó ninguna base de datos para la operación."
+        },
+        "1048": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "1050": {
+          "pt": "A tabela já existe{table_suffix}.",
+          "en": "The table already exists{table_suffix}.",
+          "es": "La tabla ya existe{table_suffix}."
+        },
+        "1051": {
+          "pt": "A tabela informada não foi encontrada{table_suffix}.",
+          "en": "The specified table was not found{table_suffix}.",
+          "es": "La tabla informada no fue encontrada{table_suffix}."
+        },
+        "1052": {
+          "pt": "Referência ambígua de coluna na consulta SQL{field_suffix}.",
+          "en": "Ambiguous column reference in SQL query{field_suffix}.",
+          "es": "Referencia ambigua de columna en la consulta SQL{field_suffix}."
+        },
+        "1054": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "1060": {
+          "pt": "A coluna já existe{field_suffix}.",
+          "en": "The column already exists{field_suffix}.",
+          "es": "La columna ya existe{field_suffix}."
+        },
+        "1061": {
+          "pt": "O índice informado já existe.",
+          "en": "The specified index already exists.",
+          "es": "El índice informado ya existe."
+        },
+        "1062": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "1064": {
+          "pt": "Há erro de sintaxe na instrução SQL do MySQL/MariaDB.",
+          "en": "There is a syntax error in the MySQL/MariaDB SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL de MySQL/MariaDB."
+        },
+        "1091": {
+          "pt": "O objeto solicitado não foi encontrado para alteração ou remoção.",
+          "en": "The requested object was not found for alteration or removal.",
+          "es": "El objeto solicitado no fue encontrado para alteración o eliminación."
+        },
+        "1109": {
+          "pt": "Tabela não encontrada na consulta SQL{table_suffix}.",
+          "en": "Table not found in SQL query{table_suffix}.",
+          "es": "Tabla no encontrada en la consulta SQL{table_suffix}."
+        },
+        "1118": {
+          "pt": "O tamanho total da linha excede o limite permitido pelo banco.",
+          "en": "The total row size exceeds the limit allowed by the database.",
+          "es": "El tamaño total de la fila excede el límite permitido por la base de datos."
+        },
+        "1136": {
+          "pt": "A quantidade de colunas e valores informados não corresponde.",
+          "en": "The number of columns and provided values does not match.",
+          "es": "La cantidad de columnas y valores informados no coincide."
+        },
+        "1142": {
+          "pt": "Permissão insuficiente para executar esta operação na tabela.",
+          "en": "Insufficient permission to perform this operation on the table.",
+          "es": "Permisos insuficientes para ejecutar esta operación en la tabla."
+        },
+        "1146": {
+          "pt": "A tabela informada não foi encontrada{table_suffix}.",
+          "en": "The specified table was not found{table_suffix}.",
+          "es": "La tabla informada no fue encontrada{table_suffix}."
+        },
+        "1213": {
+          "pt": "A transação sofreu deadlock no MySQL/MariaDB. Tente novamente.",
+          "en": "The transaction encountered a deadlock in MySQL/MariaDB. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en MySQL/MariaDB. Intente nuevamente."
+        },
+        "1264": {
+          "pt": "O valor informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The provided value is outside the allowed range{field_suffix}.",
+          "es": "El valor informado está fuera del rango permitido{field_suffix}."
+        },
+        "1292": {
+          "pt": "Foi informado um valor inválido para data, hora ou número{field_suffix}.",
+          "en": "An invalid date, time, or numeric value was provided{field_suffix}.",
+          "es": "Se informó un valor inválido para fecha, hora o número{field_suffix}."
+        },
+        "1305": {
+          "pt": "Função ou procedimento informado não foi encontrado no banco de dados.",
+          "en": "The specified function or procedure was not found in the database.",
+          "es": "La función o procedimiento informado no fue encontrado en la base de datos."
+        },
+        "1364": {
+          "pt": "Há campo obrigatório sem valor padrão definido{field_suffix}.",
+          "en": "A required field has no default value{field_suffix}.",
+          "es": "Hay un campo obligatorio sin valor predeterminado{field_suffix}."
+        },
+        "1366": {
+          "pt": "Foi informado um valor inválido{field_suffix}. Verifique caracteres especiais, emojis ou formato do dado.",
+          "en": "An invalid value was provided{field_suffix}. Check special characters, emojis, or data format.",
+          "es": "Se informó un valor inválido{field_suffix}. Verifique caracteres especiales, emojis o formato del dato."
+        },
+        "1396": {
+          "pt": "Erro relacionado a usuário, papel ou privilégio no banco de dados.",
+          "en": "User, role, or privilege related database error.",
+          "es": "Error relacionado con usuario, rol o privilegio en la base de datos."
+        },
+        "1406": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "1411": {
+          "pt": "O valor informado não pôde ser convertido adequadamente{field_suffix}.",
+          "en": "The provided value could not be converted properly{field_suffix}.",
+          "es": "El valor informado no pudo convertirse adecuadamente{field_suffix}."
+        },
+        "1442": {
+          "pt": "A operação não pode ser realizada devido a regra de trigger do banco de dados.",
+          "en": "The operation cannot be performed due to a database trigger rule.",
+          "es": "La operación no puede realizarse debido a una regla de trigger de la base de datos."
+        },
+        "1451": {
+          "pt": "Este registro não pode ser excluído ou alterado porque possui vínculos com outros registros.",
+          "en": "This record cannot be deleted or updated because it is related to other records.",
+          "es": "Este registro no puede eliminarse ni modificarse porque tiene vínculos con otros registros."
+        },
+        "1452": {
+          "pt": "Não foi possível concluir a operação porque existe referência a um registro inexistente{field_suffix}.",
+          "en": "The operation could not be completed because it references a non-existent record{field_suffix}.",
+          "es": "No fue posible completar la operación porque existe referencia a un registro inexistente{field_suffix}."
+        },
+        "1526": {
+          "pt": "Tabela particionada inválida para a operação solicitada.",
+          "en": "Invalid partitioned table for the requested operation.",
+          "es": "Tabla particionada inválida para la operación solicitada."
+        },
+        "1690": {
+          "pt": "O valor numérico calculado está fora do intervalo permitido.",
+          "en": "The calculated numeric value is outside the allowed range.",
+          "es": "El valor numérico calculado está fuera del rango permitido."
+        },
+        "1701": {
+          "pt": "A tabela não pode ser truncada porque possui vínculo por chave estrangeira.",
+          "en": "The table cannot be truncated because it has foreign key references.",
+          "es": "La tabla no puede truncarse porque tiene referencias de clave foránea."
+        },
+        "2002": {
+          "pt": "Não foi possível conectar ao servidor MySQL/MariaDB.",
+          "en": "Could not connect to the MySQL/MariaDB server.",
+          "es": "No fue posible conectarse al servidor MySQL/MariaDB."
+        },
+        "2006": {
+          "pt": "A conexão com o servidor MySQL/MariaDB foi perdida.",
+          "en": "The connection to the MySQL/MariaDB server was lost.",
+          "es": "Se perdió la conexión con el servidor MySQL/MariaDB."
+        },
+        "2013": {
+          "pt": "A conexão com o banco de dados foi perdida durante a consulta.",
+          "en": "The database connection was lost during the query.",
+          "es": "Se perdió la conexión con la base de datos durante la consulta."
+        }
+      },
+      "sqlstate": {
+        "23000": {
+          "pt": "Operação não permitida por restrição de integridade dos dados.",
+          "en": "Operation not allowed due to data integrity constraints.",
+          "es": "Operación no permitida por restricciones de integridad de datos."
+        },
+        "22001": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "22003": {
+          "pt": "O valor numérico informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The numeric value provided is outside the allowed range{field_suffix}.",
+          "es": "El valor numérico informado está fuera del rango permitido{field_suffix}."
+        },
+        "22007": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "42000": {
+          "pt": "Há erro de sintaxe SQL ou violação de regra de acesso no MySQL/MariaDB.",
+          "en": "There is an SQL syntax error or access rule violation in MySQL/MariaDB.",
+          "es": "Hay un error de sintaxis SQL o una violación de reglas de acceso en MySQL/MariaDB."
+        },
+        "42S02": {
+          "pt": "A tabela informada não foi encontrada{table_suffix}.",
+          "en": "The specified table was not found{table_suffix}.",
+          "es": "La tabla informada no fue encontrada{table_suffix}."
+        },
+        "42S22": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "HY000": {
+          "pt": "O MySQL/MariaDB retornou um erro geral.",
+          "en": "MySQL/MariaDB returned a general error.",
+          "es": "MySQL/MariaDB devolvió un error general."
+        },
+        "HY001": {
+          "pt": "Memória insuficiente no MySQL/MariaDB ou driver.",
+          "en": "Insufficient memory in MySQL/MariaDB or driver.",
+          "es": "Memoria insuficiente en MySQL/MariaDB o en el controlador."
+        },
+        "HYT00": {
+          "pt": "Tempo limite excedido na operação com MySQL/MariaDB.",
+          "en": "Timeout expired during MySQL/MariaDB operation.",
+          "es": "Se excedió el tiempo límite en la operación con MySQL/MariaDB."
+        }
+      },
+      "message_contains": {
+        "duplicate entry": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "for key": {
+          "pt": "Já existe um valor que viola a regra de unicidade do banco de dados.",
+          "en": "A value already exists that violates the database uniqueness rule.",
+          "es": "Ya existe un valor que viola la regla de unicidad de la base de datos."
+        },
+        "data too long for column": {
+          "pt": "O valor informado excede o tamanho permitido para o campo \"{field}\".",
+          "en": "The provided value exceeds the allowed size for field \"{field}\".",
+          "es": "El valor informado excede el tamaño permitido para el campo \"{field}\"."
+        },
+        "incorrect string value": {
+          "pt": "Foi informado um valor inválido para o campo \"{field}\". Verifique caracteres especiais, emojis ou codificação.",
+          "en": "An invalid value was provided for field \"{field}\". Check special characters, emojis, or encoding.",
+          "es": "Se informó un valor inválido para el campo \"{field}\". Verifique caracteres especiales, emojis o codificación."
+        },
+        "cannot delete or update a parent row": {
+          "pt": "Este registro não pode ser excluído ou alterado porque possui vínculos.",
+          "en": "This record cannot be deleted or updated because it has related records.",
+          "es": "Este registro no puede eliminarse ni modificarse porque tiene vínculos."
+        },
+        "a foreign key constraint fails": {
+          "pt": "Não foi possível concluir a operação por inconsistência de relacionamento entre registros.",
+          "en": "The operation could not be completed due to a relationship inconsistency between records.",
+          "es": "No fue posible completar la operación por inconsistencia en la relación entre registros."
+        },
+        "cannot add or update a child row": {
+          "pt": "Não foi possível gravar os dados porque a referência informada não existe.",
+          "en": "Could not save data because the referenced record does not exist.",
+          "es": "No fue posible guardar los datos porque la referencia informada no existe."
+        },
+        "column count doesn't match value count": {
+          "pt": "A quantidade de colunas não corresponde à quantidade de valores informados.",
+          "en": "The number of columns does not match the number of provided values.",
+          "es": "La cantidad de columnas no coincide con la cantidad de valores informados."
+        },
+        "unknown column": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "table doesn't exist": {
+          "pt": "A tabela informada não foi encontrada{table_suffix}.",
+          "en": "The specified table was not found{table_suffix}.",
+          "es": "La tabla informada no fue encontrada{table_suffix}."
+        },
+        "you have an error in your sql syntax": {
+          "pt": "Há erro de sintaxe na instrução SQL do MySQL/MariaDB.",
+          "en": "There is a syntax error in the MySQL/MariaDB SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL de MySQL/MariaDB."
+        },
+        "out of range value": {
+          "pt": "O valor informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The provided value is outside the allowed range{field_suffix}.",
+          "es": "El valor informado está fuera del rango permitido{field_suffix}."
+        },
+        "incorrect date value": {
+          "pt": "Foi informada uma data inválida{field_suffix}.",
+          "en": "An invalid date was provided{field_suffix}.",
+          "es": "Se informó una fecha inválida{field_suffix}."
+        },
+        "incorrect datetime value": {
+          "pt": "Foi informado um valor de data e hora inválido{field_suffix}.",
+          "en": "An invalid datetime value was provided{field_suffix}.",
+          "es": "Se informó un valor inválido de fecha y hora{field_suffix}."
+        },
+        "lock wait timeout exceeded": {
+          "pt": "A operação excedeu o tempo de espera por bloqueio no MySQL/MariaDB.",
+          "en": "The operation exceeded the lock wait timeout in MySQL/MariaDB.",
+          "es": "La operación excedió el tiempo de espera por bloqueo en MySQL/MariaDB."
+        },
+        "deadlock found when trying to get lock": {
+          "pt": "A operação sofreu deadlock no MySQL/MariaDB. Tente novamente.",
+          "en": "The operation encountered a deadlock in MySQL/MariaDB. Please try again.",
+          "es": "La operación sufrió un interbloqueo en MySQL/MariaDB. Intente nuevamente."
+        },
+        "server has gone away": {
+          "pt": "A conexão com o servidor MySQL/MariaDB foi encerrada.",
+          "en": "The connection to the MySQL/MariaDB server was closed.",
+          "es": "La conexión con el servidor MySQL/MariaDB fue cerrada."
+        },
+        "lost connection to mysql server during query": {
+          "pt": "A conexão com o MySQL/MariaDB foi perdida durante a consulta.",
+          "en": "The connection to MySQL/MariaDB was lost during the query.",
+          "es": "Se perdió la conexión con MySQL/MariaDB durante la consulta."
+        },
+        "truncated incorrect": {
+          "pt": "Foi informado um valor com formato inválido{field_suffix}.",
+          "en": "A value with invalid format was provided{field_suffix}.",
+          "es": "Se informó un valor con formato inválido{field_suffix}."
+        },
+        "doesn't have a default value": {
+          "pt": "Há campo obrigatório sem valor padrão definido{field_suffix}.",
+          "en": "A required field has no default value{field_suffix}.",
+          "es": "Hay un campo obligatorio sin valor predeterminado{field_suffix}."
+        }
+      }
+    },
+    "pgsql": {
+      "driver_codes": {
+        "22001": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "22003": {
+          "pt": "O valor numérico informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The numeric value provided is outside the allowed range{field_suffix}.",
+          "es": "El valor numérico informado está fuera del rango permitido{field_suffix}."
+        },
+        "22007": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "22P02": {
+          "pt": "Foi informado um valor inválido para o tipo de dado esperado{field_suffix}.",
+          "en": "An invalid value was provided for the expected data type{field_suffix}.",
+          "es": "Se informó un valor inválido para el tipo de dato esperado{field_suffix}."
+        },
+        "22P03": {
+          "pt": "Formato binário inválido para o tipo de dado informado.",
+          "en": "Invalid binary format for the provided data type.",
+          "es": "Formato binario inválido para el tipo de dato informado."
+        },
+        "23502": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "23503": {
+          "pt": "A operação não pode ser concluída porque existem vínculos com outros registros.",
+          "en": "The operation cannot be completed because there are related records.",
+          "es": "La operación no puede completarse porque existen vínculos con otros registros."
+        },
+        "23505": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "23514": {
+          "pt": "Os dados informados violam uma regra de validação do banco de dados.",
+          "en": "The provided data violates a database validation rule.",
+          "es": "Los datos informados violan una regla de validación de la base de datos."
+        },
+        "23P01": {
+          "pt": "A operação violou uma regra de exclusão ou sobreposição.",
+          "en": "The operation violated an exclusion or overlap rule.",
+          "es": "La operación violó una regla de exclusión o superposición."
+        },
+        "25P01": {
+          "pt": "Não há transação ativa no PostgreSQL para concluir ou desfazer.",
+          "en": "There is no active PostgreSQL transaction to commit or roll back.",
+          "es": "No hay una transacción activa en PostgreSQL para confirmar o deshacer."
+        },
+        "25P02": {
+          "pt": "A transação no PostgreSQL foi abortada e precisa ser finalizada.",
+          "en": "The PostgreSQL transaction was aborted and must be ended.",
+          "es": "La transacción en PostgreSQL fue abortada y debe finalizarse."
+        },
+        "40001": {
+          "pt": "Falha de serialização no PostgreSQL. Tente novamente.",
+          "en": "Serialization failure in PostgreSQL. Please try again.",
+          "es": "Fallo de serialización en PostgreSQL. Intente nuevamente."
+        },
+        "40P01": {
+          "pt": "A transação sofreu deadlock no PostgreSQL. Tente novamente.",
+          "en": "The transaction encountered a deadlock in PostgreSQL. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en PostgreSQL. Intente nuevamente."
+        },
+        "42501": {
+          "pt": "Permissão insuficiente para executar a operação no PostgreSQL.",
+          "en": "Insufficient privilege to perform the operation in PostgreSQL.",
+          "es": "Permisos insuficientes para ejecutar la operación en PostgreSQL."
+        },
+        "42601": {
+          "pt": "Há erro de sintaxe na instrução SQL do PostgreSQL.",
+          "en": "There is a syntax error in the PostgreSQL SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL de PostgreSQL."
+        },
+        "42703": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "42883": {
+          "pt": "A função informada não foi encontrada ou não aceita os parâmetros fornecidos.",
+          "en": "The specified function was not found or does not accept the provided parameters.",
+          "es": "La función informada no fue encontrada o no acepta los parámetros proporcionados."
+        },
+        "42P01": {
+          "pt": "A tabela ou relação informada não foi encontrada{table_suffix}.",
+          "en": "The specified table or relation was not found{table_suffix}.",
+          "es": "La tabla o relación informada no fue encontrada{table_suffix}."
+        },
+        "42P02": {
+          "pt": "Parâmetro SQL não informado corretamente na consulta.",
+          "en": "SQL parameter was not provided correctly in the query.",
+          "es": "El parámetro SQL no fue informado correctamente en la consulta."
+        },
+        "42P07": {
+          "pt": "A tabela ou relação já existe{table_suffix}.",
+          "en": "The table or relation already exists{table_suffix}.",
+          "es": "La tabla o relación ya existe{table_suffix}."
+        },
+        "55P03": {
+          "pt": "A operação não pôde prosseguir porque o recurso está bloqueado.",
+          "en": "The operation could not proceed because the resource is locked.",
+          "es": "La operación no pudo continuar porque el recurso está bloqueado."
+        },
+        "57014": {
+          "pt": "A instrução SQL do PostgreSQL foi cancelada.",
+          "en": "The PostgreSQL SQL statement was canceled.",
+          "es": "La instrucción SQL de PostgreSQL fue cancelada."
+        }
+      },
+      "sqlstate": {
+        "22001": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "22003": {
+          "pt": "O valor numérico informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The numeric value provided is outside the allowed range{field_suffix}.",
+          "es": "El valor numérico informado está fuera del rango permitido{field_suffix}."
+        },
+        "22007": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "22P02": {
+          "pt": "Foi informado um valor inválido para o tipo de dado esperado{field_suffix}.",
+          "en": "An invalid value was provided for the expected data type{field_suffix}.",
+          "es": "Se informó un valor inválido para el tipo de dato esperado{field_suffix}."
+        },
+        "23502": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "23503": {
+          "pt": "A operação não pode ser concluída porque existem vínculos com outros registros.",
+          "en": "The operation cannot be completed because there are related records.",
+          "es": "La operación no puede completarse porque existen vínculos con otros registros."
+        },
+        "23505": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "23514": {
+          "pt": "Os dados informados violam uma regra de validação do banco de dados.",
+          "en": "The provided data violates a database validation rule.",
+          "es": "Los datos informados violan una regla de validación de la base de datos."
+        },
+        "23P01": {
+          "pt": "A operação violou uma regra de exclusão ou sobreposição.",
+          "en": "The operation violated an exclusion or overlap rule.",
+          "es": "La operación violó una regla de exclusión o superposición."
+        },
+        "25P02": {
+          "pt": "A transação foi abortada e precisa ser finalizada antes de novas operações.",
+          "en": "The transaction was aborted and must be ended before new operations.",
+          "es": "La transacción fue abortada y debe finalizarse antes de nuevas operaciones."
+        },
+        "40001": {
+          "pt": "Falha de serialização no PostgreSQL. Tente novamente.",
+          "en": "Serialization failure in PostgreSQL. Please try again.",
+          "es": "Fallo de serialización en PostgreSQL. Intente nuevamente."
+        },
+        "40P01": {
+          "pt": "A transação sofreu deadlock no PostgreSQL. Tente novamente.",
+          "en": "The transaction encountered a deadlock in PostgreSQL. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en PostgreSQL. Intente nuevamente."
+        },
+        "42501": {
+          "pt": "Permissão insuficiente para executar a operação no PostgreSQL.",
+          "en": "Insufficient privilege to perform the operation in PostgreSQL.",
+          "es": "Permisos insuficientes para ejecutar la operación en PostgreSQL."
+        },
+        "42601": {
+          "pt": "Há erro de sintaxe na instrução SQL do PostgreSQL.",
+          "en": "There is a syntax error in the PostgreSQL SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL de PostgreSQL."
+        },
+        "42703": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "42883": {
+          "pt": "A função informada não foi encontrada ou não aceita os parâmetros fornecidos.",
+          "en": "The specified function was not found or does not accept the provided parameters.",
+          "es": "La función informada no fue encontrada o no acepta los parámetros proporcionados."
+        },
+        "42P01": {
+          "pt": "A tabela ou relação informada não foi encontrada{table_suffix}.",
+          "en": "The specified table or relation was not found{table_suffix}.",
+          "es": "La tabla o relación informada no fue encontrada{table_suffix}."
+        },
+        "42P07": {
+          "pt": "A tabela ou relação já existe{table_suffix}.",
+          "en": "The table or relation already exists{table_suffix}.",
+          "es": "La tabla o relación ya existe{table_suffix}."
+        },
+        "55P03": {
+          "pt": "A operação não pôde prosseguir porque o recurso está bloqueado.",
+          "en": "The operation could not proceed because the resource is locked.",
+          "es": "La operación no pudo continuar porque el recurso está bloqueado."
+        },
+        "57014": {
+          "pt": "A instrução SQL do PostgreSQL foi cancelada.",
+          "en": "The PostgreSQL SQL statement was canceled.",
+          "es": "La instrucción SQL de PostgreSQL fue cancelada."
+        }
+      },
+      "message_contains": {
+        "duplicate key value violates unique constraint": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "null value in column": {
+          "pt": "Dado obrigatório não preenchido para o campo \"{field}\".",
+          "en": "Required information not provided for field \"{field}\".",
+          "es": "Información requerida no completada para el campo \"{field}\"."
+        },
+        "violates foreign key constraint": {
+          "pt": "A operação não pode ser concluída porque existem vínculos com outros registros.",
+          "en": "The operation cannot be completed because there are related records.",
+          "es": "La operación no puede completarse porque existen vínculos con otros registros."
+        },
+        "violates check constraint": {
+          "pt": "Os dados informados violam uma regra de validação do banco de dados.",
+          "en": "The provided data violates a database validation rule.",
+          "es": "Los datos informados violan una regla de validación de la base de datos."
+        },
+        "value too long for type": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "invalid input syntax": {
+          "pt": "Foi informado um valor em formato inválido{field_suffix}.",
+          "en": "A value with an invalid format was provided{field_suffix}.",
+          "es": "Se informó un valor con formato inválido{field_suffix}."
+        },
+        "invalid input syntax for type date": {
+          "pt": "Foi informada uma data inválida{field_suffix}.",
+          "en": "An invalid date was provided{field_suffix}.",
+          "es": "Se informó una fecha inválida{field_suffix}."
+        },
+        "invalid input syntax for type timestamp": {
+          "pt": "Foi informado um valor de data e hora inválido{field_suffix}.",
+          "en": "An invalid timestamp value was provided{field_suffix}.",
+          "es": "Se informó un valor inválido de fecha y hora{field_suffix}."
+        },
+        "relation does not exist": {
+          "pt": "A tabela ou relação informada não foi encontrada{table_suffix}.",
+          "en": "The specified table or relation was not found{table_suffix}.",
+          "es": "La tabla o relación informada no fue encontrada{table_suffix}."
+        },
+        "column does not exist": {
+          "pt": "A coluna informada não foi encontrada{field_suffix}.",
+          "en": "The specified column was not found{field_suffix}.",
+          "es": "La columna informada no fue encontrada{field_suffix}."
+        },
+        "function does not exist": {
+          "pt": "A função informada não foi encontrada ou não aceita os parâmetros fornecidos.",
+          "en": "The specified function was not found or does not accept the provided parameters.",
+          "es": "La función informada no fue encontrada o no acepta los parámetros proporcionados."
+        },
+        "current transaction is aborted": {
+          "pt": "A transação foi abortada e precisa ser finalizada antes de novas operações.",
+          "en": "The transaction was aborted and must be ended before new operations.",
+          "es": "La transacción fue abortada y debe finalizarse antes de nuevas operaciones."
+        },
+        "deadlock detected": {
+          "pt": "A transação sofreu deadlock no PostgreSQL. Tente novamente.",
+          "en": "The transaction encountered a deadlock in PostgreSQL. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en PostgreSQL. Intente nuevamente."
+        },
+        "could not serialize access due to": {
+          "pt": "Falha de serialização no PostgreSQL. Tente novamente.",
+          "en": "Serialization failure in PostgreSQL. Please try again.",
+          "es": "Fallo de serialización en PostgreSQL. Intente nuevamente."
+        },
+        "canceling statement due to statement timeout": {
+          "pt": "A instrução SQL excedeu o tempo limite no PostgreSQL.",
+          "en": "The SQL statement exceeded the timeout in PostgreSQL.",
+          "es": "La instrucción SQL excedió el tiempo límite en PostgreSQL."
+        },
+        "permission denied": {
+          "pt": "Permissão insuficiente para executar a operação no PostgreSQL.",
+          "en": "Insufficient privilege to perform the operation in PostgreSQL.",
+          "es": "Permisos insuficientes para ejecutar la operación en PostgreSQL."
+        }
+      }
+    },
+    "sqlsrv": {
+      "driver_codes": {
+        "208": {
+          "pt": "A tabela ou objeto informado não foi encontrado no SQL Server.",
+          "en": "The specified table or object was not found in SQL Server.",
+          "es": "La tabla u objeto informado no fue encontrado en SQL Server."
+        },
+        "207": {
+          "pt": "A coluna informada não foi encontrada no SQL Server{field_suffix}.",
+          "en": "The specified column was not found in SQL Server{field_suffix}.",
+          "es": "La columna informada no fue encontrada en SQL Server{field_suffix}."
+        },
+        "245": {
+          "pt": "Foi informado um valor inválido para o tipo de dado esperado{field_suffix}.",
+          "en": "An invalid value was provided for the expected data type{field_suffix}.",
+          "es": "Se informó un valor inválido para el tipo de dato esperado{field_suffix}."
+        },
+        "241": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "242": {
+          "pt": "O valor de data ou hora informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The provided date or time value is outside the allowed range{field_suffix}.",
+          "es": "El valor de fecha u hora informado está fuera del rango permitido{field_suffix}."
+        },
+        "257": {
+          "pt": "Conversão implícita de tipo não permitida na operação solicitada.",
+          "en": "Implicit type conversion is not allowed in the requested operation.",
+          "es": "La conversión implícita de tipo no está permitida en la operación solicitada."
+        },
+        "2601": {
+          "pt": "Já existe um valor único já cadastrado{value_suffix}.",
+          "en": "A unique value already exists{value_suffix}.",
+          "es": "Ya existe un valor único registrado{value_suffix}."
+        },
+        "2627": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "2714": {
+          "pt": "O objeto informado já existe no SQL Server.",
+          "en": "The specified object already exists in SQL Server.",
+          "es": "El objeto informado ya existe en SQL Server."
+        },
+        "2812": {
+          "pt": "Procedure ou rotina informada não foi encontrada no SQL Server.",
+          "en": "The specified procedure or routine was not found in SQL Server.",
+          "es": "El procedimiento o rutina informado no fue encontrado en SQL Server."
+        },
+        "3621": {
+          "pt": "A instrução SQL foi encerrada pelo SQL Server devido a erro anterior.",
+          "en": "The SQL statement was terminated by SQL Server due to a previous error.",
+          "es": "La instrucción SQL fue finalizada por SQL Server debido a un error anterior."
+        },
+        "4060": {
+          "pt": "Não foi possível abrir o banco de dados solicitado no SQL Server.",
+          "en": "Could not open the requested database in SQL Server.",
+          "es": "No fue posible abrir la base de datos solicitada en SQL Server."
+        },
+        "515": {
+          "pt": "Dado obrigatório não preenchido{field_suffix}.",
+          "en": "Required information not provided{field_suffix}.",
+          "es": "Información requerida no completada{field_suffix}."
+        },
+        "547": {
+          "pt": "A operação não pode ser realizada porque existem vínculos com outros registros.",
+          "en": "The operation cannot be completed because there are related records.",
+          "es": "La operación no puede realizarse porque existen vínculos con otros registros."
+        },
+        "8114": {
+          "pt": "Erro ao converter o valor informado para o tipo esperado{field_suffix}.",
+          "en": "Error converting the provided value to the expected type{field_suffix}.",
+          "es": "Error al convertir el valor informado al tipo esperado{field_suffix}."
+        },
+        "8115": {
+          "pt": "O valor informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The provided value is outside the allowed range{field_suffix}.",
+          "es": "El valor informado está fuera del rango permitido{field_suffix}."
+        },
+        "8134": {
+          "pt": "Ocorreu divisão por zero durante o processamento dos dados.",
+          "en": "A division by zero occurred while processing data.",
+          "es": "Se produjo una división por cero al procesar los datos."
+        },
+        "8152": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "8155": {
+          "pt": "Uma coluna calculada ou derivada não recebeu nome na consulta.",
+          "en": "A computed or derived column did not receive a name in the query.",
+          "es": "Una columna calculada o derivada no recibió nombre en la consulta."
+        },
+        "1205": {
+          "pt": "A transação sofreu deadlock no SQL Server. Tente novamente.",
+          "en": "The transaction encountered a deadlock in SQL Server. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en SQL Server. Intente nuevamente."
+        },
+        "1222": {
+          "pt": "A operação excedeu o tempo de espera por bloqueio no SQL Server.",
+          "en": "The operation exceeded the lock wait timeout in SQL Server.",
+          "es": "La operación excedió el tiempo de espera por bloqueo en SQL Server."
+        },
+        "18456": {
+          "pt": "Falha de autenticação no SQL Server. Verifique usuário e senha.",
+          "en": "Authentication failure in SQL Server. Check username and password.",
+          "es": "Fallo de autenticación en SQL Server. Verifique usuario y contraseña."
+        }
+      },
+      "sqlstate": {
+        "23000": {
+          "pt": "Operação não permitida por restrição de integridade dos dados.",
+          "en": "Operation not allowed due to data integrity constraints.",
+          "es": "Operación no permitida por restricciones de integridad de datos."
+        },
+        "22001": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "22003": {
+          "pt": "O valor numérico informado está fora do intervalo permitido{field_suffix}.",
+          "en": "The numeric value provided is outside the allowed range{field_suffix}.",
+          "es": "El valor numérico informado está fuera del rango permitido{field_suffix}."
+        },
+        "22007": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "42000": {
+          "pt": "Há erro de sintaxe SQL ou violação de regra de acesso no SQL Server.",
+          "en": "There is an SQL syntax error or access rule violation in SQL Server.",
+          "es": "Hay un error de sintaxis SQL o una violación de reglas de acceso en SQL Server."
+        },
+        "42S02": {
+          "pt": "A tabela ou objeto informado não foi encontrado no SQL Server.",
+          "en": "The specified table or object was not found in SQL Server.",
+          "es": "La tabla u objeto informado no fue encontrado en SQL Server."
+        },
+        "42S22": {
+          "pt": "A coluna informada não foi encontrada no SQL Server{field_suffix}.",
+          "en": "The specified column was not found in SQL Server{field_suffix}.",
+          "es": "La columna informada no fue encontrada en SQL Server{field_suffix}."
+        },
+        "HYT00": {
+          "pt": "Tempo limite excedido na operação com SQL Server.",
+          "en": "Timeout expired during SQL Server operation.",
+          "es": "Se excedió el tiempo límite en la operación con SQL Server."
+        },
+        "HYT01": {
+          "pt": "Tempo limite de conexão com SQL Server excedido.",
+          "en": "SQL Server connection timeout expired.",
+          "es": "Se excedió el tiempo límite de conexión con SQL Server."
+        }
+      },
+      "message_contains": {
+        "violation of unique key constraint": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "cannot insert duplicate key row": {
+          "pt": "Já existe um registro duplicado{value_suffix}.",
+          "en": "A duplicate record already exists{value_suffix}.",
+          "es": "Ya existe un registro duplicado{value_suffix}."
+        },
+        "cannot insert the value null into column": {
+          "pt": "Dado obrigatório não preenchido para o campo \"{field}\".",
+          "en": "Required information not provided for field \"{field}\".",
+          "es": "NInformación requerida no completada para el campo \"{field}\"."
+        },
+        "string or binary data would be truncated": {
+          "pt": "O valor informado excede o tamanho permitido{field_suffix}.",
+          "en": "The provided value exceeds the allowed size{field_suffix}.",
+          "es": "El valor informado excede el tamaño permitido{field_suffix}."
+        },
+        "the delete statement conflicted with the reference constraint": {
+          "pt": "Este registro não pode ser excluído porque possui vínculos.",
+          "en": "This record cannot be deleted because it has related records.",
+          "es": "Este registro no puede eliminarse porque tiene vínculos."
+        },
+        "the update statement conflicted with the reference constraint": {
+          "pt": "Este registro não pode ser alterado porque possui vínculos inconsistentes.",
+          "en": "This record cannot be updated because it has inconsistent related records.",
+          "es": "Este registro no puede modificarse porque tiene vínculos inconsistentes."
+        },
+        "the insert statement conflicted with the foreign key constraint": {
+          "pt": "Não foi possível gravar os dados porque a referência informada não existe.",
+          "en": "Could not save data because the referenced record does not exist.",
+          "es": "No fue posible guardar los datos porque la referencia informada no existe."
+        },
+        "conversion failed when converting date and/or time": {
+          "pt": "Foi informado um valor de data ou hora em formato inválido{field_suffix}.",
+          "en": "An invalid date or time value was provided{field_suffix}.",
+          "es": "Se informó un valor de fecha u hora en formato inválido{field_suffix}."
+        },
+        "error converting data type": {
+          "pt": "Erro ao converter o valor informado para o tipo esperado{field_suffix}.",
+          "en": "Error converting the provided value to the expected type{field_suffix}.",
+          "es": "Error al convertir el valor informado al tipo esperado{field_suffix}."
+        },
+        "arithmetic overflow": {
+          "pt": "O valor numérico resultante está fora do intervalo permitido.",
+          "en": "The resulting numeric value is outside the allowed range.",
+          "es": "El valor numérico resultante está fuera del rango permitido."
+        },
+        "divide by zero error encountered": {
+          "pt": "Ocorreu divisão por zero durante o processamento dos dados.",
+          "en": "A division by zero occurred while processing data.",
+          "es": "Se produjo una división por cero al procesar los datos."
+        },
+        "invalid object name": {
+          "pt": "A tabela ou objeto informado não foi encontrado no SQL Server.",
+          "en": "The specified table or object was not found in SQL Server.",
+          "es": "La tabla u objeto informado no fue encontrado en SQL Server."
+        },
+        "invalid column name": {
+          "pt": "A coluna informada não foi encontrada no SQL Server{field_suffix}.",
+          "en": "The specified column was not found in SQL Server{field_suffix}.",
+          "es": "La columna informada no fue encontrada en SQL Server{field_suffix}."
+        },
+        "procedure or function expects parameter": {
+          "pt": "Parâmetro obrigatório não informado para procedure ou função do SQL Server.",
+          "en": "Required parameter not provided for SQL Server procedure or function.",
+          "es": "Parámetro obligatorio no informado para procedimiento o función de SQL Server."
+        },
+        "incorrect syntax near": {
+          "pt": "Há erro de sintaxe na instrução SQL do SQL Server.",
+          "en": "There is a syntax error in the SQL Server SQL statement.",
+          "es": "Hay un error de sintaxis en la instrucción SQL de SQL Server."
+        },
+        "transaction (process id) was deadlocked": {
+          "pt": "A transação sofreu deadlock no SQL Server. Tente novamente.",
+          "en": "The transaction encountered a deadlock in SQL Server. Please try again.",
+          "es": "La transacción sufrió un interbloqueo en SQL Server. Intente nuevamente."
+        },
+        "lock request time out period exceeded": {
+          "pt": "A operação excedeu o tempo de espera por bloqueio no SQL Server.",
+          "en": "The operation exceeded the lock wait timeout in SQL Server.",
+          "es": "La operación excedió el tiempo de espera por bloqueo en SQL Server."
+        },
+        "login failed for user": {
+          "pt": "Falha de autenticação no SQL Server. Verifique usuário e senha.",
+          "en": "Authentication failure in SQL Server. Check username and password.",
+          "es": "Fallo de autenticación en SQL Server. Verifique usuario y contraseña."
+        },
+        "cannot open database": {
+          "pt": "Não foi possível abrir o banco de dados solicitado no SQL Server.",
+          "en": "Could not open the requested database in SQL Server.",
+          "es": "No fue posible abrir la base de datos solicitada en SQL Server."
+        }
+      }
+    }
+  }
+}
