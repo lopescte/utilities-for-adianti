@@ -82,8 +82,8 @@ trait AutoFormConstraintsTrait
 
     protected function getTableSchemaMeta(
         string $tableOrRecordClass,
-        ?string $schema = null,
-        ?string $database = null,
+        string $schema = null,
+        string $database = null,
         int $cacheTtl
     ): array
     {
