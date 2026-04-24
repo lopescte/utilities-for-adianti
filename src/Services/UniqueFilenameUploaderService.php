@@ -7,6 +7,10 @@ use Adianti\Service\AdiantiUploaderService;
 
 use Exception;
 
+if (!class_exists(AdiantiUploaderService::class)) {
+    return;
+}
+
 /**
  * Class UniqueFilenameUploaderService
  *

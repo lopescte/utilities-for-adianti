@@ -9,6 +9,10 @@ use Adianti\Core\AdiantiCoreTranslator;
 use SimpleXMLElement;
 use Exception;
 
+if (!class_exists(TBreadCrumb::class)) {
+    return;
+}
+
 /**
  * Class TBreadCrumbWithLink
  *
