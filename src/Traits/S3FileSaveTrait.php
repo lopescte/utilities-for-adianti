@@ -4,6 +4,8 @@ namespace Lopescte\UtilitiesForAdianti\Traits;
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 
+use Exception;
+
 /**
  * Trait AdiantiS3FileSaveTrait
  *
@@ -59,6 +61,27 @@ trait S3FileSaveTrait
     
         return $this->s3_client;
     }
+    
+    /**
+     * Deleta arquivo único do S3
+     */
+    public function deleteFileFromBucket($url)
+    {
+        try {
+            if(empty($url)){
+                throw new Exception('URL do arquivo inválida.');
+            }
+            $delFile = urldecode($url);
+            
+            $this->getS3Client()->deleteObject([
+                'Bucket'     => $this->s3_config['bucket'],
+                'Key'        => $this->extractKeyFromUrl($delFile),
+            ]);
+        
+        } catch (AwsException $e) {
+            throw new Exception("Erro ao salvar arquivo no S3: " . $e->getAwsErrorMessage());
+        }
+    }
 
     /**
      * Salva arquivo único (campo TFile) no S3 e atualiza o objeto
@@ -72,7 +95,8 @@ trait S3FileSaveTrait
             $pk = $object->getPrimaryKey();      
             $class = get_class($object);
             $localPath = $file->fileName;
-
+            $object->$field = $localPath;
+            
             try {
                 if (!empty($file->delFile))
                 {
@@ -87,7 +111,6 @@ trait S3FileSaveTrait
                 }
                 if (!empty($file->newFile) && file_exists($localPath)) {
                     $s3Key = trim($s3Path . '/' . $object->$pk . '/' . basename($file->fileName), '/');
-                    
                     $result = $this->getS3Client()->putObject([
                         'Bucket'     => $this->s3_config['bucket'],
                         'Key'        => $s3Key,
@@ -99,6 +122,7 @@ trait S3FileSaveTrait
                     $object->$field = $result['ObjectURL'];
                     $data->$field = $result['ObjectURL'];
                 }
+                
                 $class::where($pk, '=', $object->$pk)->set($field, $object->$field)->update();
 
             } catch (AwsException $e) {
@@ -188,6 +212,7 @@ trait S3FileSaveTrait
                             @unlink($source_file);
     
                             $model_file = new $model_files;
+                            $model_file->fromArray( (array) $data); // Recebe os demais dados do form
                             $model_file->$file_field   = $result['ObjectURL'];
                             $model_file->$foreign_key  = $object->$pk;
                             $model_file->store();
