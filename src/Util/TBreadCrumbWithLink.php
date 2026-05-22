@@ -46,7 +46,7 @@ class TBreadCrumbWithLink extends TBreadCrumb
         $this->container->{'class'} = 'tbreadcrumbwithlink';
         parent::add( $this->container );
         
-        TStyle::importFromFile(__DIR__ .'/../../css/style.css');              
+        TStyle::importFromFile(__DIR__ .'/../Resources/css/style.css');              
     }
     
     /**
