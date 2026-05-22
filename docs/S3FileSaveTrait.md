@@ -56,7 +56,7 @@ $this->configureS3([
 
 ---
 
-## :file_folder: Upload de Arquivo Único (TFile)
+## :file_folder: Upload Único (TFile)
 ```php
 $this->saveFileToBucket($object, $data, 'campo_arquivo', 'uploads');
 ```
@@ -78,7 +78,7 @@ $this->saveFileToBucket($object, $data, 'campo_arquivo', 'uploads');
 
 ---
 
-## :open_file_folder: Upload Múltiplo (TMultiFile)
+## :file_folder: Upload Múltiplo (TMultiFile)
 ```php
 $this->saveFilesToBucket(
     $object,
@@ -112,6 +112,23 @@ $this->saveFilesToBucket(
 
 ---
 
+## :open_file_folder: Exclusão de Arquivo Único
+```php
+$this->deleteFileFromBucket($url);
+```
+### Parâmetros
+
+| Parâmetro | Descrição |
+|---|---|
+| `$url` | URL do arquivo armazenado no Active Record |
+
+### Funcionamento
+
+- remove um arquivo do S3;
+- recomendável usar na funçao `Delete` do Datagrid;
+
+---
+
 ## :shield: Segurança e Boas Práticas
 
 - utilize credenciais via `.env` sempre que possível;
@@ -128,6 +145,7 @@ $this->saveFilesToBucket(
 - URLs retornadas podem ser armazenadas diretamente no banco;
 - exclusões devem ser tratadas com cautela;
 - o bucket deve estar previamente configurado.
+- Será necessário adaptar o arquivo `download.php` na raiz de seu projeto para permitir acesso aos arquivos no bucket.
 
 ---
 
