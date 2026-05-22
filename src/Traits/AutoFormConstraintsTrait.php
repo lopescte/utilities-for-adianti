@@ -267,7 +267,7 @@ trait AutoFormConstraintsTrait
             'character varying',
             'character',
             'nvarchar',
-            'nchar',
+            'nchar'
         ], true);
     }
 
@@ -304,6 +304,9 @@ trait AutoFormConstraintsTrait
 
     protected function isRequiredColumn(array $columnMeta): bool
     {
+        /*echo '<pre>';
+        print_r($columnMeta);
+        echo '</pre>';*/
         $nullable = (bool) ($columnMeta['nullable'] ?? true);
         $default  = $columnMeta['default'] ?? null;
         $primary  = (bool) ($columnMeta['primary'] ?? false);
@@ -320,7 +323,8 @@ trait AutoFormConstraintsTrait
             return false;
         }
 
-        return !$nullable && $default === null;
+        //return !$nullable && $default === null;
+        return !$nullable;
     }
 
     protected function isFieldEditable(TField $field): bool
@@ -402,7 +406,7 @@ trait AutoFormConstraintsTrait
         return $label;
     }
     
-    protected function applyRequiredVisualMarkers(array $fieldNames, bool $markRequiredLabel): void
+    protected function applyRequiredVisualMarkers($form, array $fieldNames, bool $markRequiredLabel, bool $appendRequiredMarker, string $setRequiredMarker, array $fontParameters): void
     {
         if (!$markRequiredLabel) {
             return;
@@ -412,10 +416,25 @@ trait AutoFormConstraintsTrait
             return;
         }
     
+        $formName = method_exists($form, 'getName') ? $form->getName() : null;
+        $jsonFormName = json_encode($formName, JSON_UNESCAPED_UNICODE);
         $jsonFields = json_encode(array_values(array_unique($fieldNames)), JSON_UNESCAPED_UNICODE);
     
         TScript::create("setTimeout(function() {
+            const formName = {$jsonFormName};
+            const fields = {$jsonFields};
+            const appendMarker = '{$appendRequiredMarker}';
             
+            if (!formName) {
+                return;
+            }
+        
+            const form = document.querySelector('form[name=\"' + formName + '\"]');
+        
+            if (!form) {
+                return;
+            }
+
             function isFieldDisabled(input) {
                 if (!input) return true;
         
@@ -448,19 +467,22 @@ trait AutoFormConstraintsTrait
         
                 return false;
             }
-            
-            const fields = {$jsonFields};
         
             fields.forEach(function(fieldName) {
-                const input = document.querySelector('[name=\"' + fieldName + '\"]');
+                const input = form.querySelector('[name=\"' + fieldName + '\"]') ||
+                              form.querySelector('[name=\"' + fieldName + '[]\"]') ||
+                              form.querySelector('[name=\"file_' + fieldName + '\"]') ||
+                              form.querySelector('[name=\"file_' + fieldName + '[]\"]') ||
+                              form.querySelector('[receiver=\"' + fieldName + '\"]');
+                              
                 if (!input || isFieldDisabled(input)) {
                     return;
                 }
-        
+
                 let label = null;
         
                 if (input.id) {
-                    label = document.querySelector('label[for=\"' + input.id + '\"]');
+                    label = form.querySelector('label[for=\"' + input.id + '\"]');
                 }
         
                 let group =
@@ -489,10 +511,25 @@ trait AutoFormConstraintsTrait
                         })[0];
                     }
                 }
-        
+                
                 if (label && !label.dataset.requiredMarked) {
-                    label.insertAdjacentHTML('beforeend', ' <span style=\"color:red\">*</span>');
-                    /*label.style.color = 'red';*/
+                    const realLabel = label.matches('label')
+                        ? label
+                        : label.querySelector('label') || label;
+                
+                    if (!realLabel.dataset.requiredMarked) {
+                        if(appendMarker == '1') {
+                            realLabel.insertAdjacentHTML(
+                                'beforeend',
+                                ' <span style=\"display:inline-flex;color:{$fontParameters['color']};margin-left:2px;font-weight:600;\">{$setRequiredMarker}</span>'
+                            );
+                        }
+                
+                        realLabel.style.color = '{$fontParameters['color']}';
+                        realLabel.style.fontWeight = '{$fontParameters['size']}';
+                        realLabel.dataset.requiredMarked = '1';
+                    }
+                
                     label.dataset.requiredMarked = '1';
                 }
         
@@ -505,14 +542,15 @@ trait AutoFormConstraintsTrait
         }, 0);");
     }
     
-    protected function appendRequiredFooter($form)
+    protected function appendRequiredFooter($form, bool $appendRequiredMarker, string $setRequiredMarker, array $fontParameters)
     {
         $formName = $form->getName();
         
         TScript::create("
         setTimeout(function() {
             const form = document.querySelector('form[name=\"{$formName}\"]');
-        
+            const appendMarker = '{$appendRequiredMarker}';
+            
             if (!form) return;
             
             const panelBody = form.querySelector('.panel-body');
@@ -522,10 +560,15 @@ trait AutoFormConstraintsTrait
         
             const div = document.createElement('div');
             div.id = 'adianti-required-footer';
-            div.style.color = 'red';
+            div.style.color = '{$fontParameters['color']}';
             div.style.padding = '10px';
+            div.style.fontWeight = '{$fontParameters['size']}';
         
-            div.innerText = 'Campos marcados com (*) são obrigatórios.';
+            if(appendMarker == '1'){
+                div.innerText = 'Campos marcados com {$setRequiredMarker} são obrigatórios.';
+            }else{
+                div.innerText = 'Campos em destaque são obrigatórios.'; 
+            }
         
             panelBody.appendChild(div);
         }, 0);
@@ -591,7 +634,11 @@ trait AutoFormConstraintsTrait
         bool $ignorePrimaryKey = true,
         bool $markRequiredLabel = true,
         bool $setFieldLabelWhenMissing = true,
-        int $cacheTtl = 86400
+        bool $appendRequiredFooter = true,
+        bool $appendRequiredMarker = true,
+        string $setRequiredMarker = '*',
+        array $fontParameters = ['color'=>'red', 'size'=>'600'],
+        int $cacheTtl = 2592000
     ): void {
         $form             = $this->normalizeForm($form);
         $meta             = $this->getTableSchemaMeta($tableOrRecordClass, $schema, $database, $cacheTtl);
@@ -653,11 +700,11 @@ trait AutoFormConstraintsTrait
             }
         }
         if(!empty($requiredFieldNames) && $markRequiredLabel === true){
-            $this->applyRequiredVisualMarkers($requiredFieldNames, $markRequiredLabel);
-        }
-        
-        if($markRequiredLabel === true){
-            $this->appendRequiredFooter($form);
+            $this->applyRequiredVisualMarkers($form, $requiredFieldNames, $markRequiredLabel, $appendRequiredMarker, $setRequiredMarker, $fontParameters);
+            
+            if($appendRequiredFooter === true){
+                $this->appendRequiredFooter($form, $appendRequiredMarker, $setRequiredMarker, $fontParameters);
+            }
         }
     }
 
